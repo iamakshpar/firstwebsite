@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 21px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1769ff;
+}
+
+.home {
+    max-width: 1000px;
+    min-height: 600px;
+    margin: auto;
+    padding: 150px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.home p:first-child {
+    color: #1769ff;
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.home h3 {
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.home p {
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background: #1769ff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid #ddd;
+}
+
+.about p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.contact {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.contact p {
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #1769ff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 650px) {
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    nav li {
+        margin: 5px 10px;
+    }
+
+    .home {
+        padding: 100px 20px;
+    }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
